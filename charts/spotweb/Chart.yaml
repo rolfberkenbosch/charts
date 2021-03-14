@@ -3,7 +3,7 @@
 apiVersion: v2
 appVersion: 1.0.0
 description: Spotweb is one of the most-featured Spotnet clients currently available. 
-name: wikijs
+name: spotweb
 version: 1..4.9
 kubeVersion: ">=1.16.0-0"
 keywords:
