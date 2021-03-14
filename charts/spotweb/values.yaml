@@ -42,10 +42,10 @@ ingress:
   # enable this if you would like to access you wiki
   enabled: false
 
-postgresql
+postgresql:
   enabled: false
 
-mariadb
+mariadb:
   enabled: false
 
 nodeSelector:
