@@ -33,13 +33,13 @@ env:
   SPOTWEB_DB_PASS:
 
 service:
-  # -- The default port is 3000 used by wiki.ks
+  # -- The default port is 3000 used by spotweb
   port:
     port: 80
     targetPort: 80
 
 ingress:
-  # enable this if you would like to access you wiki
+  # enable this if you would like to access you sportweb
   enabled: false
 
 postgresql:
@@ -56,10 +56,4 @@ persistence:
     enabled: false
     emptyDir: false
     accessMode: "ReadWriteOnce"
-    size: "1Gi"
-  data:
-    enabled: false
-    emptyDir: false
-    accessMode: "ReadWriteOnce"
-    mountPath: /app/wiki/data
     size: "1Gi"
