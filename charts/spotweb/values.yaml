@@ -20,7 +20,7 @@ env:
   # -- Set the time zone, e.g. Europe/Amsterdam
   TZ:
   # -- DB tpye mysql or postgresql
-  SPOTWEB_DB_TYPE: SQLite
+  SPOTWEB_DB_TYPE:
   # -- Database server hostname
   SPOTWEB_DB_HOST:
   # -- Database port
