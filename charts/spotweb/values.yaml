@@ -11,7 +11,7 @@
 image:
   repository: jgeusebroek/spotweb 
   pullPolicy: IfNotPresent
-  tag: 20210314
+  tag: "20210314"
 
 strategy:
   type: Recreate
