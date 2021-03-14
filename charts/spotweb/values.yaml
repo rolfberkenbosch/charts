@@ -1,0 +1,65 @@
+---
+
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/k8s-at-home/charts/tree/master/charts/common/values.yaml
+#
+
+# -- This is the default, you can also use requarks/wiki
+image:
+  repository: jgeusebroek/spotweb 
+  pullPolicy: IfNotPresent
+  tag: 20210228
+
+strategy:
+  type: Recreate
+
+env:
+  # -- Set the time zone, e.g. Europe/Amsterdam
+  TZ:
+  # -- DB tpye mysql or postgresql
+  SPOTWEB_DB_TYPE:
+  # -- Database server hostname
+  SPOTWEB_DB_HOST:
+  # -- Database port
+  SPOTWEB_DB_PORT:
+  # -- Database name
+  SPOTWEB_DB_NAME:
+  # -- Database user
+  SPOTWEB_DB_USER:
+  # -- Database password
+  SPOTWEB_DB_PASS=spotweb:
+
+service:
+  # -- The default port is 3000 used by wiki.ks
+  port:
+    port: 80
+    targetPort: 80
+
+ingress:
+  # enable this if you would like to access you wiki
+  enabled: false
+
+postgresql
+  enabled: false
+
+mariadb
+  enabled: false
+
+nodeSelector:
+  kubernetes.io/arch: amd64
+
+persistence:
+  config:
+    enabled: false
+    emptyDir: false
+    accessMode: "ReadWriteOnce"
+    size: "1Gi"
+  data:
+    enabled: false
+    emptyDir: false
+    accessMode: "ReadWriteOnce"
+    mountPath: /app/wiki/data
+    size: "1Gi"

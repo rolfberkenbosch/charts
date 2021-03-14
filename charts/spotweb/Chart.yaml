@@ -1,0 +1,31 @@
+---
+
+apiVersion: v2
+appVersion: 1.0.0
+description: Spotweb is one of the most-featured Spotnet clients currently available. 
+name: wikijs
+version: 1..4.9
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - spotweb
+  - spotnet
+home: https://github.com/spotweb/spotweb
+icon: https://www.htpcguides.com/wp-content/uploads/2015/06/spotweb-logo.png 
+sources:
+  - https://hub.docker.com/r/jgeusebroek/spotweb/ 
+  - https://github.com/spotweb/spotweb
+maintainers:
+  - name: rolfberkenbosch
+    email: rolf@berkenbosch.nl
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 1.0.0
+  - name: postgresql
+    version: 10.3.7
+    repository: https://charts.bitnami.com/bitnami
+    condition: postgresql.enabled
+  - name: mariadb
+    version: 9.3.4
+    repository: https://charts.bitnami.com/bitnami
+    condition: mariadb.enabled
