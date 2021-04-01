@@ -20,7 +20,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://rolfberkenbosch.github.io/library-charts/
-    version: 2.1.5
+    version: 2.1.6
   - name: postgresql
     version: 10.3.7
     repository: https://charts.bitnami.com/bitnami
