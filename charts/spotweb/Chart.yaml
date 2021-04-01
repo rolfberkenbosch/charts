@@ -20,7 +20,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com
-    version: 1.0.0
+    version: 2.1.0
   - name: postgresql
     version: 10.3.7
     repository: https://charts.bitnami.com/bitnami
