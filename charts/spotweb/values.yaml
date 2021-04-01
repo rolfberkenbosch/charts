@@ -54,6 +54,6 @@ nodeSelector:
 persistence:
   config:
     enabled: false
-    emptyDir: false
     accessMode: "ReadWriteOnce"
     size: "1Gi"
+    mountPath: "/etc/apache2"
