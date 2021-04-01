@@ -56,3 +56,4 @@ persistence:
     enabled: false
     emptyDir:
       enabled: false
+    mountPath: "/etc/apache2"
