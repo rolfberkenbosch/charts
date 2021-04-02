@@ -17,6 +17,6 @@ maintainers:
 - name: billimek
   email: jeff@billimek.com
 dependencies:
-- name: common
-  repository: https://library-charts.k8s-at-home.com
-  version: 2.1.0
+  - name: common
+    repository: https://rolfberkenbosch.github.io/library-charts/
+    version: 2.1.7
