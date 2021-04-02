@@ -1,0 +1,22 @@
+apiVersion: v2
+appVersion: 4.6.0.36
+description: Emby is a Free Software Media System
+name: emby
+version: 1.0.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+- jellyfin
+- plex
+- emby
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/emby
+icon: http://i.imgur.com/OmLzxEm.png
+sources:
+- https://hub.docker.com/r/emby/emby
+- https://emby.media
+maintainers:
+- name: rolfberkenbosch
+  email: rolf@berkenbosch.nl
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 2.1.0
