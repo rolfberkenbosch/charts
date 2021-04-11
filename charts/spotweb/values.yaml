@@ -36,7 +36,7 @@ service:
   # -- The default port is 3000 used by spotweb
   port:
     port: 80
-    targetPort: 8080
+    targetPort: 80
 
 ingress:
   # enable this if you would like to access you sportweb
