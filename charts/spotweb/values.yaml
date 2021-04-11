@@ -44,6 +44,10 @@ ingress:
 
 postgresql:
   enabled: false
+  persistence:
+    enabled: false
+    size: 8Gi
+
 
 mariadb:
   enabled: false
