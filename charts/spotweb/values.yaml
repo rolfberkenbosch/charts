@@ -20,7 +20,7 @@ env:
   # -- Set the time zone, e.g. Europe/Amsterdam
   TZ:
   # -- DB tpye mysql or postgresql
-  DB_TYPE:
+  DB_ENGINE:
   # -- Database server hostname
   DB_HOST:
   # -- Database port
